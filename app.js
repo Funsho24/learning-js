@@ -112,7 +112,7 @@
 // console.log(`my full name is ${fullName}`);
 
 // numbers- 5 6.3 45000
-const ye = 2003
+// const ye = 2003
 // math operators - + - * / ** %
 // console.log(6 % 2); //0
 // console.log(5 % 2); //1
@@ -297,31 +297,31 @@ if (age >= 18) {
 const password = "dimension@";
 // recommemnded >7 and include @, strong > 7 and weak
 
-if (password.length >= 7 && password.includes("@")) {
-    console.log("your password is recommended");
-} else if (password.length >= 7) {
-    console.log("your password is strong");
-} else {
-    console.log("your password is weak");
-}
+// if (password.length >= 7 && password.includes("@")) {
+//     console.log("your password is recommended");
+// } else if (password.length >= 7) {
+//     console.log("your password is strong");
+// } else {
+//     console.log("your password is weak");
+// }
 
 //whether a number is positive, negative or zero
-const num1 = 2;
+// const num1 = 2;
 
-if (num1 > 0) {
-    console.log("your number is positive");
-} else if (num1 < 0) {
-    console.log("your number is negative");
-} else {
-    console.log("your number is zero");
-}
+// if (num1 > 0) {
+//     console.log("your number is positive");
+// } else if (num1 < 0) {
+//     console.log("your number is negative");
+// } else {
+//     console.log("your number is zero");
+// }
 
-const num2 = 5;
-if (num2 % 2 === 0) {
-    console.log("your number is even");
-} else {
-    console.log("your number is odd");
-}
+// const num2 = 5;
+// if (num2 % 2 === 0) {
+//     console.log("your number is even");
+// } else {
+//     console.log("your number is odd");
+// }
 
 const age2 = 25;
 if (age2 < 18) {
@@ -389,4 +389,67 @@ switch (day) {
         break;
     default:
         console.log("NOT A VALID DAY");
+}
+
+//assignment
+//Mark data 1
+let markweight = 78;
+let markheight = 1.69;
+let markbmi = markweight / markheight *2;
+console.log(markbmi);
+
+//data2
+ markweight = 95;
+ markheight= 1.88;
+markbmi = markweight / markheight *2;
+console.log(markbmi);
+
+//john data
+let johnweight = 92;
+let johnheight = 1.95;
+let johnbmi = johnweight / johnheight*2 ;
+console.log(johnbmi);
+
+//data 2
+johnweight = 85;
+johnheight = 1.76;
+johnbmi = johnweight / johnheight*2;
+console.log(johnbmi);
+
+//markhigherBmi
+console.log(markbmi > johnbmi);
+console.log(markbmi < johnbmi);
+// markbmi is higher
+
+//test 2
+if (markbmi > johnbmi) {
+    console.log("Mark's BMI is higher than john's!");
+} else {
+    console.log("John's BMI is higher than Mark's");
+}
+//template literals
+const output = `Marks BMI ${markbmi} is higher than Johns ${johnbmi}`
+console.log(output);
+
+// test 3
+//dolphins score
+const dscore = 96;
+const dscore2 = 108;
+const dscore3 = 89;
+const totaldscore = dscore + dscore2 + dscore3 / 3;
+console.log(totaldscore);
+
+//Koala score
+const kscore = 88;
+const kscore2 = 91;
+const kscore3 = 110;
+const totalkscore = kscore + kscore2 + kscore3 / 3;
+console.log(totalkscore);
+
+if (totaldscore > totalkscore) {
+    console.log("dolphin is the winner");
+} else if (totalkscore > totaldscore) {
+    console.log("koalas is the winner");
+} else {
+    console.log("it is a draw");
 }
