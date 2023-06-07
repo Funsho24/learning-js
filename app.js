@@ -598,169 +598,329 @@
 
 // const name = () =>{}
 
-const logger = (a, b, c) => {
-    const total = a + b + c;
-    return total;
-}
+// const logger = (a, b, c) => {
+//     const total = a + b + c;
+//     return total;
+// }
 
-console.log(logger(4, 5, 7));
+// console.log(logger(4, 5, 7));
 // logger(3, 4, 5)
 
 //const difference =(a, b) => {
     // return a-b ;
 // };
 
- const difference = (a, b) => a - b;
+//  const difference = (a, b) => a - b;
 
-console.log(difference(67, 50));
+// console.log(difference(67, 50));
 
-const calcavg = (a, b, c) => {
-    const avg = (a + b + c) / 3;
-    return Number(avg.toFixed(2));
-};
+// const calcavg = (a, b, c) => {
+//     const avg = (a + b + c) / 3;
+//     return Number(avg.toFixed(2));
+// };
 
 //variable scoping
 // global and local scoping
 
-const a = 5;
-console.log(a);
+// const a = 5;
+// console.log(a);
 
-const local = () => {
-    const a = 7;
-    const b = 8;
-    console.log(a);
-};
-local();
+// const local = () => {
+//     const a = 7;
+//     const b = 8;
+//     console.log(a);
+// };
+// local();
 //arrays
-const students = ["mofe", "precious", "sheu"]
-console.log(students);
+// const students = ["mofe", "precious", "sheu"]
+// console.log(students);
 // arrays properties and methods
-console.log(students.length);
+// console.log(students.length);
 // arrays - includes, sorts,pop,push,shift,unshift,slice,splice,concat,join,tostring
 // get elements in array
-console.log(students[0]);
-console.log(students[students.length - 1]);
+// console.log(students[0]);
+// console.log(students[students.length - 1]);
 
 //converting an array to a string -tstring , join
-console.log(students.toString());
-console.log(students.join(" "));
+// console.log(students.toString());
+// console.log(students.join(" "));
 
 // adding elements to an array - push adds an elements to thr back while unshift adds an element to the front
-students.push("ola");
-students.push("nike");
+// students.push("ola");
+// students.push("nike");
 
-students.unshift("Ebuka");
-students.unshift("emma");
+// students.unshift("Ebuka");
+// students.unshift("emma");
 
-console.log(students);
+// console.log(students);
 
 // removing elements from an array-pop removes an elements from the back while shift removes an element from the front
-students.pop();
-students.pop();
-students.pop();
+// students.pop();
+// students.pop();
+// students.pop();
 
 
-students.shift();
-students.shift();
-console.log(students);
+// students.shift();
+// students.shift();
+// console.log(students);
 //
 // array-sort - arranges elements inside of an array alphabetically while reverse aarranges from the back
-console.log(students.sort());
-console.log(students.reverse());
+// console.log(students.sort());
+// console.log(students.reverse());
 
-console.log(students.includes("ola"));
-console.log(students.includes("mofe"));
+// console.log(students.includes("ola"));
+// console.log(students.includes("mofe"));
 
 // indexof lastindexof
 
 //concat
-const anotherStudents =["toyin","zainab"]
-console.log(students.concat(anotherStudents, ["ayo", "Ade"]));
+// const anotherStudents =["toyin","zainab"]
+// console.log(students.concat(anotherStudents, ["ayo", "Ade"]));
 
-console.log(students.slice(0, 2)); // 0,1
-
-
-const countries = ["japan", "canada", "spain", "netherlands"]
-
-console.log(countries.length);
-
-if (countries.length > 5) {
-    console.log("country is greater than 5");
-} else { console.log("country is less than 5") };
-
-countries.length > 5 ? console.log("country is greater than 5") : console.log("country is less than 5");
+// console.log(students.slice(0, 2)); // 0,1
 
 
-let savings = 200000;
+// const countries = ["japan", "canada", "spain", "netherlands"]
 
-const transaction = [5000, -10000, -100]
+// console.log(countries.length);
 
-transaction.push(-2000)
-transaction.push(50000)
-transaction.push(-3000)
-transaction.pop()
+// if (countries.length > 5) {
+//     console.log("country is greater than 5");
+// } else { console.log("country is less than 5") };
 
-console.log(transaction);
-let debit = 0;
-let credit = 0;
+// countries.length > 5 ? console.log("country is greater than 5") : console.log("country is less than 5");
 
 
-for (i = 0; i < transaction.length; i++) {
+// let savings = 200000;
+
+// const transaction = [5000, -10000, -100]
+
+// transaction.push(-2000)
+// transaction.push(50000)
+// transaction.push(-3000)
+// transaction.pop()
+
+// console.log(transaction);
+// let debit = 0;
+// let credit = 0;
+
+
+// for (i = 0; i < transaction.length; i++) {
     // console.log(transaction[i]);
-    savings += transaction[i];
-    if (transaction[i] < 0) {
-        debit += transaction[i] 
-      console.log(`you have been debited ${transaction[i]}`);  
-    } else {
-        credit += transaction[i];
-        console.log(`you have been credited ${transaction[i]}`);
-    }
-}
-  console.log(`your total credit is ${credit}`);
- console.log(`your total debit is ${debit}`);
-console.log(`your account balance is ${savings}`);
+//     savings += transaction[i];
+//     if (transaction[i] < 0) {
+//         debit += transaction[i]
+//       console.log(`you have been debited ${transaction[i]}`);
+//     } else {
+//         credit += transaction[i];
+//         console.log(`you have been credited ${transaction[i]}`);
+//     }
+// }
+//   console.log(`your total credit is ${credit}`);
+//  console.log(`your total debit is ${debit}`);
+// console.log(`your account balance is ${savings}`);
  
 // arrays- filter , find , map , foreach
-const friends = ["john", "jane", "adam", "jennifer", "owen"];
-friends.includes("lester");
+// const friends = ["john", "jane", "adam", "jennifer", "owen"];
+// friends.includes("lester");
 
-friends.forEach((friend, index) => {
-    console.log(`${index} the name of my friend is ${friend}`);
-});
+// friends.forEach((friend, index) => {
+//     console.log(`${index} the name of my friend is ${friend}`);
+// });
 
-friends.forEach((f , index) => {
-    console.log(f, index);
-});
+// friends.forEach((f , index) => {
+//     console.log(f, index);
+// });
 
 
 //map
-friends.map((val, index) => {
-    console.log(index);
-    if (val === "jane" || val === "adam") {
-        console.log(`${val} is my best friend`);
-    } else {
-        console.log(`${val} is just my friend`);
-    }
-});
+// friends.map((val, index) => {
+//     console.log(index);
+//     if (val === "jane" || val === "adam") {
+//         console.log(`${val} is my best friend`);
+//     } else {
+//         console.log(`${val} is just my friend`);
+//     }
+// });
 
 
 //filter find
 
-const filteredfriends = friends.filter((friend) => {
-    return friend.startsWith("J");
-});
-console.log(filteredfriends);
+// const filteredfriends = friends.filter((friend) => {
+//     return friend.startsWith("J");
+// });
+// console.log(filteredfriends);
 
-//find
-const foundUser = friends.find((friend) => {
-    return friend.startsWith("j")
-});
-console.log(foundUser);
+// //find
+// const foundUser = friends.find((friend) => {
+//     return friend.startsWith("j")
+// });
+// console.log(foundUser);
 
-const result = friends.filter((friend) => friend.length > 6);
-const result2 = friends.find((f) => f.startsWith("A"));
+// const result = friends.filter((friend) => friend.length > 6);
+// const result2 = friends.find((f) => f.startsWith("A"));
 
-console.log(result, result2);
+// console.log(result, result2);
+
+//accumulator
+
+// const movement = [300, -50, 700, 400, -300];
+
+// const total = movement.reduce((acc, val) => {
+//     return acc + val;
+// }, 0);
+
+// console.log(`your total bill is ${total}`);
 //object
+
+//object
+const desc = ['mubarak', 'ola', 39, 'developer', ['shola', 'toyin']]
+//OBJECT - properties ,methods
+// car key-value
+const user = {
+    firstName: 'james',
+    lastName: 'uchiha',
+    age: 39,
+job: 'data scientist',
+    friends:['sasuke','naruto','fury']
+}
+console.log(user);
+
+//
+// access properties from an object
+// dot notation , bracket
+console.log(user.firstName.toUpperCase());
+console.log(user.age);
+
+//objName['propertyName']
+console.log(user["friends"].includes('steven'));
+const namekey = "Name";
+console.log(user["last" + namekey]);
+
+//adding properties to an object
+user.hasACar = true;
+user.status = "married";
+console.log(user);
+
+//remove properties
+//delete
+delete user.friends;
+console.log(user);
+
+const book = {
+    title: "Rich Dad Poor Dad",
+    Author: "robert kiyosaki",
+    year: 2001,
+    pages: 207,
+    similarBooks: [
+        "Richest man in babylon",
+        "The Monk who sold his Ferarri",
+        "Think and Grow Rich",
+    ],
+    publisher: "Macmillian",
+    getsummary: function () {
+        return `The title of the book is ${this.title} written by ${this.author} in the year ${this.year}`
+    },
+        
+};
+console.log(book);
+
+console.log(book.getsummary());
+
+console.log(this);
+
+//object destructuring
+// const {propertyNames} =objName
+
+//publisher, author, year
+const { publisher, author, pages, year } = book;
+console.log(publisher);
+
+const users = [
+    { name: "john", userName: "johnny123", password: "345678fjv9", age: 32 },
+    { name: "john", userName: "johnny123", password: "345678fjv9", age: 32 },
+      { name: "john", userName: "johnny123", password: "345678fjv9", age: 32 },
+       {name:"john",userName:"johnny123", password:"345678fjv9", age:32},
+]
+// age >= 18
+
+const canView = users.filter((usert) => {
+    return user.age >= 18;
+});
+console.log(canView);
+
+const search = users.filter((user) => {
+    return user.name.startsWith("j") || user.username.startsWith("J");
+});
+console.log(search);
+
+//rest Lhs and spread rhs
+
+const ages = [32, 54, 16, 65, 89];
+const newAges = [2, ...ages, 76 ,80]
+console.log(newAges);
+
+const [...rest] = ages;
+console.log(rest);
+
+// MATH OBJECT - 8 maths constants
+// console.log(Math.PI);
+
+// math methods
+// sqrt , trunc , round , random , ceil , floor,
+
+console.log(Math.sqrt(65789));
+
+console.log(Math.trunc(9.789));
+console.log(Math.trunc(Math.sqrt(3456)));
+
+//5
+console.log(Math.round(7.34));
+console.log(Math.round(0.23));
+console.log(Math.round(67.98));
+console.log(Math.round(2.56));
+console.log(Math.round(-2.5));
+console.log(Math.ceil(10.1));
+console.log(Math.floor(6.7));
+
+console.log(Math.random() * 2 + 1);
+
+console.log(Math.trunc(Math.random() * 6));
+
+const computer = ["rock", "paper", "scissors"];
+const randomNum = Math.trunc(Math.random() * 3);
+const computerChoice = computer[randomNum]
+console.log(computerChoice);
+
+// const playerChoice = "Rock"
+const playerChoice= prompt ("Enter a choice (rock , paper, scissors): ")
+
+const checkwin = function (computer, player) {
+    if (computer === player) {
+        return "This is a tie";
+    } else if (player === "rock") {
+        if (computer === "scissors") {
+            return "Rock smashes scissors, you win!";
+        } else {
+            return "Paper covers rock , You lose !";
+        }
+    } else if (player === "paper") {
+        if (computer === "rock") {
+            return "Paper covers rock, You win !";
+        } else {
+            return "scissors cuts paper, you lose!";
+        }
+    } else if (player === " scissors") {
+        if (computer === "paper") {
+            return "Scissors cut paper, You win!";
+        } else {
+            return "Rock smashes scissors, you lose!"
+        }
+    }
+}
+    
+const result = checkwin(computerChoice, playerChoice);
+console.log(result);
+
 //asybchronous js
 //Dom
