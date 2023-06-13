@@ -484,7 +484,7 @@
 // initializer
 // while loop
 // let x = 0;
-// while (x, 20) {
+// while (x < 20) {
 //     console.log("hello");
 //     x++;
 // }
@@ -641,11 +641,11 @@
 // console.log(students[0]);
 // console.log(students[students.length - 1]);
 
-//converting an array to a string -tstring , join
+//converting an array to a string - tostring - changes the arrayb to a string , join- adds space between the string
 // console.log(students.toString());
 // console.log(students.join(" "));
 
-// adding elements to an array - push adds an elements to thr back while unshift adds an element to the front
+// adding elements to an array - push adds an elements to the back while unshift adds an element to the front
 // students.push("ola");
 // students.push("nike");
 
@@ -654,7 +654,7 @@
 
 // console.log(students);
 
-// removing elements from an array-pop removes an elements from the back while shift removes an element from the front
+// removing elements from an array- pop removes an elements from the back while shift removes an element from the front
 // students.pop();
 // students.pop();
 // students.pop();
@@ -872,6 +872,7 @@
 // console.log(Math.sqrt(65789));
 
 // console.log(Math.trunc(9.789));
+
 // console.log(Math.trunc(Math.sqrt(3456)));
 
 //5
@@ -888,7 +889,7 @@
 // console.log(Math.trunc(Math.random() * 6));
 
 // const computer = ["rock", "paper", "scissors"];
-// const randomNum = Math.trunc(Math.random() * 3);
+ // const randomNum = Math.trunc(Math.random() * 3);
 // const computerChoice = computer[randomNum]
 // console.log(computerChoice);
 
@@ -957,7 +958,7 @@
 
 // promises- containers for future value
 
-const url = "https://jsonplaceholder.typicode.com/users";
+// const url = "https://jsonplaceholder.typicode.com/users";
 
 //fetch
 // fetch(url).then((response) => {
@@ -969,14 +970,14 @@ const url = "https://jsonplaceholder.typicode.com/users";
 //     });
 
 //
-const fetchdata = (site) => {
-    fetch(site)
-        .then((res) => res.json())
-        .then((data) => console.log(data))
-        .catch((err) => {
-      console.log(err);  
-    })
-};
+// const fetchdata = (site) => {
+//     fetch(site)
+//         .then((res) => res.json())
+//         .then((data) => console.log(data))
+//         .catch((err) => {
+//       console.log(err);  
+//     })
+// };
 // catch
 
 // fetchdata(url);
@@ -993,17 +994,17 @@ const fetchdata = (site) => {
 // }
 
 //asynv / await
-const getData = async (site) => {
-    try {
-        const response = await fetch(site);
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.log(error);
-    }
-};
+// const getData = async (site) => {
+//     try {
+//         const response = await fetch(site);
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// };
 
-getData(url);
+// getData(url);
 
 // storage api
 // local storage - setItem , getItem , removeItem , clear , length
